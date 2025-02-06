@@ -1,0 +1,1 @@
+lea rsi, [codes + rax]
