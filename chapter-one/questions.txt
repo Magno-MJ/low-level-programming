@@ -1,0 +1,32 @@
+ 1 -  
+      * CF: Carry Flag - Ativada quando a operação aritmética gera carry ou borrow (overflow para inteiros não sinalizados)
+      * AF: Auxiliary Carry Flag - Ativada quando a operação aritmética gera carry ou borrow depois do bit 3
+      * ZF: Zero Flag - Ativada quando o resultado de uma operação é zeor
+      * OF: Overflow Flag - Ativada quando o resultado é grande demais para um número positivo ou pequeno demais para um número negativo (overflow para inteiros sinalizados)
+      * SF: Sign Flag - Ativada para ser igual ao bit mais significativo do resultado. Representa o sinal utilizado pelo resultado
+
+2 - 
+    * Processador executa instruções que são buscadas pela U.C através da A.L.U
+    * A memória compartilhada entre código e operandos e cada célula possui seu devido endereço
+    * O processador se comunica com memória através de barramentos
+
+3 - São células de memória que estão dentro do processador
+
+4 - Uma abstração da memória que permite que a memória seja tratada como uma pilha e tenha as operações PUSH e POP
+
+5 - São interações que o hardware envia para o processador que as trata de acordo com seus devidos comandos separados
+
+6 - 
+    * Muitas consultas à memória lenta
+    * Falta de interatividade
+    * Sem suporte para isolamento de código
+    * Qualquer programa pode executar qualquer instrução
+    * Os programas não estão isolados uns dos outros
+
+7 - RAX, RBX, RDX, RSI, RDI, RSP e RBP
+
+8 - Apontar para o último elemento da pilha
+
+9 - Não, a pilha não pode estar vazia, sempre há um elemento
+
+10 - Sim, é possível
