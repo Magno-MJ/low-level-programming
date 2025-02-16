@@ -1,0 +1,105 @@
+11 - Realiza uma operação OR exclusiva nos bits de RDI com RDI, zera o registrador
+
+12 - Código 0
+
+13 - 0, armazenado em RDI
+
+14 - 0x34 = 4 e 0x61 = a
+
+15 -
+  
+  * SAR - Shift Arithmetical Right: Realiza um deslocamento à direita conservando o bit de sinal
+  * SHR - Shift Right: Realiza um deslocamento à direita sem se preocupar com o bit de sinal
+
+16 -  
+    * Decimal: 200, 100, 100d, 0100
+    * Hexadecimal: 0c8h, $0c8, 0xc8, 0hc8
+    * Octal: 310q, 310o, 0o310, 0q310
+    * Binário: 11001000b, 1100_1000b, 1100_1000y, 0b1100_1000, 0y1100_1000
+
+17 - Apenas o nome, pois ambas verificam a ZF e pulam para a instrução desejada caso a flag esteja ativada
+
+18 -
+  
+  * 
+
+19 - 
+
+    * R13 não foi limpo e sua soma com RDI gerará um apontamento para outro endereço de memória
+    * O retorno da função movido de R13 para RDI estará com o valor errado já que R13 está com lixo armazenado
+
+
+23 - Todos são partes do mesmo registrador
+
+24 - 
+    * R9B - Para acessar o byte menos significativo
+    * R9W - Para acessar os dois bytes menos significativos
+    * R9D - Para acessar os quatro bytes menos significativos
+
+25 - Empilhando dados (PUSH) e desempilhando (POP)
+
+26 -
+    * mov [rax], 0: Movendo o valor 0 para o endereço de memória contido em rax
+    * cmp [rdx], bl: Comparando o valor contido no endereço de memória de rdx com o valor de bl
+    * mov bh, bl: Move o valor de bl para bh
+    * mov al, al: Move o valor de al para al
+    * add bpl, 9: Move o valor 9 para bpl
+    * add [9], spl: Soma o valor do endereço de memória 9 com spl
+    * mov r8d, r9d: Move o valor de r9d para r8d
+    * mov r3b, al: Move o valor de al para r3b
+    * mov rcx, [rax + rbx + rdx]: move o valor contido no endereço somado para rcx
+    * mov r9, [r9 + 8 * rax]: move o valor do endereço resultante para r9
+
+27 - RBX, RBP, RSP, R12-R15
+
+28 - RAX, RDX, RSI, RDI, R8-R11
+
+29 - O registrador RIP aponta para próxima instrução a ser executada
+
+30 - Signal Flag - Indica
+
+31 - Zero Flag - Ativada quando o resultado de uma operação é zero
+
+32 - 
+    * SAR - Realiza um deslocamento para a direita conservando o sinal
+    * SHR - Realiza um deslocamento para a direita ignorando o sinal
+    * XOR - Realiza uma operação de OU exclusiva
+    * JMP - Realiza um salto para o endereço desejado
+    * JMP, JE e instruções semelhantes - Realizam saltos condicionais ou incondicionais
+    * CMP - Realiza a comparação entre dois operandos
+    * MOV - Move o valor de um operando para outro
+    * INC, DEC - INC realiza incrementação e DEC a decrementação
+    * ADD - Realiza a soma dos operandos
+    * IMUL, MUL - Realizam multiplicações com operandos
+    * SUB - Realiza a subtração dos operandos
+    * IDIV, DIV - Realiza a divisão dos operandos
+    * CALL, RET - CALL chama determinada função e RET desempilha o último valor da stack em RSI
+    * PUSH, POP - PUSH empilha um valor na stack e POP desempilha
+
+33 - Um nome para um endereço de memória, possui o tamanho de um byte.
+
+34 - Verificando se o número é maior ou igual a x e menor ou igual a y
+
+35 - 
+     * JAB/JBL -> Instruções de comparação para inteiros não sinalizados
+     * JG/JL -> Instruções de comparação para inteiros sinalizados
+
+36 - Nenhuma, ambas utilizam a ZF e pulam de acordo com ela
+
+37 - test rax, rax
+
+38 - Codigo armazenado em RDI após término do programa, geralmente com a função de indicar se o programa foi finalizado com sucesso ou não
+
+39 - MUL 9 
+
+40 - 
+
+41 - 
+    * Little Endian: Números menos significativos vem primeiro
+    * Big Endian: Números mais significativos vem primeiro
+
+42 - 
+
+43 - No rótulo global _start
+
+44 - 
