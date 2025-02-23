@@ -20,8 +20,6 @@
 17 - Apenas o nome, pois ambas verificam a ZF e pulam para a instrução desejada caso a flag esteja ativada
 
 18 - 00000001
-  
-  * 
 
 19 - 
 
