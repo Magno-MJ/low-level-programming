@@ -2,10 +2,9 @@ global _start
 
 
 section .data
-test_string: "abcdef", 0
+test_string: db "abcdef", 0
 
 section .text
-
 
 strlen:
 .loop:
